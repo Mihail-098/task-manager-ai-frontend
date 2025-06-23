@@ -1,7 +1,7 @@
-export function Button({ children, onClick }) {
-  return (
-    <button onClick={onClick} className="px-4 py-2 rounded bg-blue-600 text-white hover:bg-blue-700">
-      {children}
-    </button>
-  );
+export function Card({ children }) {
+  return <div className="bg-white shadow-md rounded-md">{children}</div>;
+}
+
+export function CardContent({ children, className }) {
+  return <div className={className}>{children}</div>;
 }
